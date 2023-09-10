@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*conteúdo*/
 .pagina1 { 
     background-color: rgb(170, 87, 248);
 }
@@ -12,7 +12,7 @@
     background-color: red;
 }
 .pagina3 {
-    background-color: darkcyan;
+    background-color: rgb(30, 60, 108);
 }
 
 .pagina4 {
@@ -23,9 +23,20 @@
     background-color: dodgerblue;
 }
 
+
+/*Interface geral*/
+.interface {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+/*Seções de conteúdo*/
 section {
     display: flex;
+    scroll-snap-align: start;
     align-items: center;
     justify-content: center;
     color: white;
+    height: 100vh;
 }
